@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trang cá nhân — Đỗ Đại Uy</title>
+  <meta name="description" content="Bài tập môn Xây dựng ứng dụng web — Trang HTML của Đỗ Đại Uy.">
+  <style>
+    :root{font-family:system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;line-height:1.5}
+    body{margin:0;padding:0;color:#111;background:#f7f7fb}
+    header, main, footer{max-width:980px;margin:24px auto;padding:18px;background:white;border-radius:12px;box-shadow:0 6px 18px rgba(20,20,50,0.06)}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    h1{font-size:1.6rem;margin:0}
+    nav a{margin-left:12px;text-decoration:none;color:#225}
+    nav a:hover{text-decoration:underline}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+    ul{padding-left:1.25rem}
+    footer{font-size:0.9rem;text-align:center}
+    .meta{color:#556; font-size:0.95rem}
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <h1>Trang Web Cá Nhân — Đỗ Đại Uy</h1>
+    <nav aria-label="Liên kết nhanh">
+      <a href="#gallery">Ảnh</a>
+      <a href="#features">Nội dung</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section id="intro">
+      <p class="meta">Bài tập môn <strong>Xây dựng ứng dụng web</strong> — sinh viên <strong>Đỗ Đại Uy</strong>. Trang này được tạo để thực hành HTML ngữ nghĩa, danh sách, ảnh và liên kết bên ngoài.</p>
+    </section>
+
+    <section id="features">
+      <h2>Nội dung chính</h2>
+      <ul>
+        <li>Thẻ ngữ nghĩa cơ bản: <code>header</code>, <code>main</code>, <code>footer</code></li>
+        <li>Thư viện ảnh với mô tả bằng thuộc tính <code>alt</code></li>
+        <li>Liên kết đến trang tài liệu bên ngoài (MDN Web Docs)</li>
+      </ul>
+    </section>
+
+    <section id="gallery">
+      <h2>Bộ sưu tập ảnh</h2>
+      <div class="gallery" role="list">
+        <img role="listitem" src="https://picsum.photos/seed/alpha/800/600" alt="Cảnh bình minh trên đồi ở quê tôi">
+        <img role="listitem" src="https://picsum.photos/seed/bravo/800/600" alt="Ngôi nhà cổ cạnh hàng cây xanh">
+        <img role="listitem" src="https://picsum.photos/seed/charlie/800/600" alt="Con đường rợp bóng cây mùa hè">
+      </div>
+    </section>
+
+    <section id="external">
+      <h2>Tài liệu tham khảo</h2>
+      <p>Nếu bạn muốn tìm hiểu thêm về HTML và các chuẩn web, có thể xem tại <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>. Đây là nguồn học tập rất hữu ích cho sinh viên CNTT.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Liên hệ với tôi</h2>
+      <form>
+        <label for="name">Tên</label><br>
+        <input id="name" name="name" type="text" placeholder="Nhập tên của bạn"><br><br>
+        <label for="msg">Tin nhắn</label><br>
+        <textarea id="msg" name="message" rows="4" placeholder="Viết lời nhắn tại đây..."></textarea><br><br>
+        <button type="submit">Gửi</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>© 2025 — Đỗ Đại Uy | Môn: Xây dựng ứng dụng web</p>
+  </footer>
+</body>
+</html>
